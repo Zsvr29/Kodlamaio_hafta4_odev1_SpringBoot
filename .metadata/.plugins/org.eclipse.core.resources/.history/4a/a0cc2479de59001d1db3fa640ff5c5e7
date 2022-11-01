@@ -1,0 +1,18 @@
+package kodlama.io.Kodlama.io.Devs.dataAccess.concretes;
+
+import java.util.List;
+
+import kodlama.io.Kodlama.io.Devs.dataAccess.abstacts.LanguageRepository;
+import kodlama.io.Kodlama.io.Devs.entities.concretes.Language;
+
+public class InMemoryLanguageRepository implements LanguageRepository {
+//(veri tabanına gıtmıyecez bellleten calısacaz)
+	
+	List<Language> languages;
+	@Override
+	public List<Language> getAll() {
+		
+		return languages;
+	}
+
+}
